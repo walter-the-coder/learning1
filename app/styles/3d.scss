@@ -1,0 +1,75 @@
+.pageContainer{
+	background-image: url('./../images/lens.png');
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: 50% 10%;
+	width: 100%;
+	padding-bottom: 100%;
+	overflow-y: hidden;
+}
+
+.Container_3D{
+	perspective: 1000px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 30px;
+	border: none !important;
+}
+[id="menu3D"]{
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+
+	-webkit-transition: transform 1s linear;  
+    -moz-transition: transform 1s linear;  
+    -o-transition: transform 1s linear;  
+    transition: transform 1s linear;	
+}
+
+.plate{
+	position: absolute;
+	border: 1px solid black;
+	display: block;
+	background-color: black;
+	height: 150px;
+	width: 100%;
+	overflow: hidden;
+	color: white;
+	p, h1{
+		margin: 10px 20px;
+	}
+	border: none !important;
+
+	-webkit-transition: box-shadow 0.8s linear;  
+    -moz-transition: box-shadow 0.8s linear;  
+    -o-transition: box-shadow 0.8s linear;  
+    transition: box-shadow 0.8s linear;
+	box-shadow: 0 -8px 3px -4px rgba(0, 0, 0, 0.2), 
+            	inset 0px -15px 20px -10px rgba(255, 0, 0, 0.3), 
+            	inset 0 -15px 20px -10px rgba(0, 0, 0, 0.15);
+
+    
+}
+
+[id="menu3D"] .menu3D_plate  { transform: rotateX(  -90deg )  translateZ( 75px ) translateY(-75px ); }
+[id="menu3D"] .menu3D_plate2  { transform: rotateY(   0deg ) translateZ( 150px ); }
+[id="menu3D"].popMenu { transform: translateY( 150px )  translateZ( -150px ) rotateX(90deg ); }
+[id="menu3D"].popText { transform: translateZ( -150px ) rotateY( 0deg );}
+
+.popShadow{
+	box-shadow: inset 0 10px 15px -15px #FFFFFF, 
+            	inset 0px -1000px 20px 20px #df979a, 
+            	inset 0 1000px 20px -10px #FFFFFF !important;
+
+}
+
+.popShadowReturn{
+	box-shadow: inset 0 10px 15px -15px rgba(255,255,255, 0.1), 
+            	inset 0px -50px 20px 20px rgba(255,0,0, 0.3), 
+            	inset 0 100px 20px -10px rgba(255,255,255, 0.1) !important;
+
+}
+
+
+
+[id="menu3D"] { transform: translateZ( -150px ); }

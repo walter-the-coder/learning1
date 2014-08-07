@@ -1,0 +1,23 @@
+<div class="container">
+	<h1>Peity Graphs  - <a href="http://benpickles.github.io/peity/">Link</a></h1>
+	<hr />
+	<br />
+	<span class="pie" data-diameter="140">1/5</span>
+	<span class="pie" data-diameter="140">226/360</span>
+	<span class="pie" data-diameter="140">0.52/1.561</span>
+	<span class="pie" data-diameter="140">1,4</span>
+	<span class="pie" data-diameter="140">226,134</span>
+	<span class="pie" data-diameter="140">0.52,1.041</span>
+	<span class="pie" data-diameter="140">1,2,3,2,2</span>
+	<br />
+	<br />
+	<br />
+	<span class="bar bar-colours-1" data-width="250" data-height="200">5,3,9,6</span>
+</div><!-- /.container -->
+<script>
+	$(function(){
+		$("span.pie").peity("pie");
+		$("span.bar").peity("bar", {fill: ["#202020", "#303030", "#404040", "#505050"]});
+
+	});
+</script>

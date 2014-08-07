@@ -1,0 +1,16 @@
+.rightClickImage{
+	max-width: 100%;
+	height: 50px;
+	box-shadow: 2px 2px 2px black;
+	border: 1px solid black;
+	cursor: zoom-in;
+}
+.larger{
+	position: absolute;
+	height: 100%;
+	cursor: zoom-out;
+}
+.rightClickImageWrapper{
+	text-align: center;
+	margin-top: 200px;
+}
